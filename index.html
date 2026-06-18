@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaPay - Controle total da sua vida financeira</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F172A',
+            secondary: '#2563EB',
+            success: '#10B981',
+            accent: '#7C3AED',
+            surface: '#F8FAFC',
+            muted: '#64748B'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface text-primary">
+
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold text-secondary">Nova<span class="text-accent">Pay</span></a>
+
+      <nav class="hidden md:flex gap-8 text-muted font-medium">
+        <a href="#" class="nav-link">Dashboard</a>
+        <a href="#" class="nav-link">Cartões</a>
+        <a href="#" class="nav-link">Investimentos</a>
+        <a href="#" class="nav-link">Cashback</a>
+      </nav>
+
+      <a href="#" class="btn-primary bg-secondary text-white px-4 py-2 rounded-lg font-medium">Abrir Conta</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-bg">
+      <div class="max-w-6xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="fade-up">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            Controle total da sua vida financeira
+          </h1>
+          <p class="mt-5 text-lg text-muted">
+            Organize gastos, acompanhe investimentos e maximize seus ganhos em um único aplicativo.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#" class="btn-primary bg-secondary text-white px-6 py-3 rounded-lg font-semibold">Começar Agora</a>
+            <a href="#" class="px-6 py-3 rounded-lg font-semibold border border-slate-300 text-primary hover:bg-slate-100 transition">Saiba Mais</a>
+          </div>
+        </div>
+
+        <!-- mockup do app feito só com HTML/CSS -->
+        <div class="fade-up">
+          <div class="bg-primary text-white rounded-2xl p-6 shadow-xl">
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-slate-300">Saldo disponível</span>
+              <span class="text-xs bg-success/20 text-success px-2 py-1 rounded-full">+4,2%</span>
+            </div>
+            <p class="text-3xl font-bold mt-2">R$ 12.450,80</p>
+
+            <div class="mt-6 flex items-end gap-2 h-28">
+              <div class="flex-1 bg-secondary/70 rounded-t" style="height: 45%"></div>
+              <div class="flex-1 bg-secondary/70 rounded-t" style="height: 70%"></div>
+              <div class="flex-1 bg-accent rounded-t" style="height: 90%"></div>
+              <div class="flex-1 bg-secondary/70 rounded-t" style="height: 55%"></div>
+              <div class="flex-1 bg-secondary/70 rounded-t" style="height: 80%"></div>
+              <div class="flex-1 bg-success rounded-t" style="height: 65%"></div>
+            </div>
+
+            <div class="mt-6 grid grid-cols-2 gap-3">
+              <div class="bg-white/10 rounded-lg p-3">
+                <p class="text-xs text-slate-300">Investimentos</p>
+                <p class="font-semibold">R$ 31.200,00</p>
+              </div>
+              <div class="bg-white/10 rounded-lg p-3">
+                <p class="text-xs text-slate-300">Cashback</p>
+                <p class="font-semibold">R$ 1.245,00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+          <p class="text-sm text-muted">Saldo disponível</p>
+          <p class="text-2xl font-bold mt-1">R$ 12.450,80</p>
+        </div>
+        <div class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+          <p class="text-sm text-muted">Investimentos</p>
+          <p class="text-2xl font-bold mt-1">R$ 31.200,00</p>
+        </div>
+        <div class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+          <p class="text-sm text-muted">Cashback</p>
+          <p class="text-2xl font-bold mt-1 text-success">R$ 1.245,00</p>
+        </div>
+        <div class="card bg-white rounded-xl p-5 shadow-sm border border-slate-100">
+          <p class="text-sm text-muted">Economia mensal</p>
+          <p class="text-2xl font-bold mt-1">R$ 870,00</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold text-center">Tudo o que você precisa em um só lugar</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+        <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+          <div class="w-11 h-11 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary text-xl font-bold">$</div>
+          <h3 class="font-semibold mt-4">Controle Inteligente</h3>
+          <p class="text-muted text-sm mt-2">Acompanhe receitas e despesas.</p>
+        </article>
+        <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+          <div class="w-11 h-11 rounded-lg bg-accent/10 flex items-center justify-center text-accent text-xl font-bold">#</div>
+          <h3 class="font-semibold mt-4">Cartão Virtual</h3>
+          <p class="text-muted text-sm mt-2">Mais segurança nas compras.</p>
+        </article>
+        <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+          <div class="w-11 h-11 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary text-xl font-bold">%</div>
+          <h3 class="font-semibold mt-4">Investimentos</h3>
+          <p class="text-muted text-sm mt-2">Diversifique sua carteira.</p>
+        </article>
+        <article class="card bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+          <div class="w-11 h-11 rounded-lg bg-success/10 flex items-center justify-center text-success text-xl font-bold">+</div>
+          <h3 class="font-semibold mt-4">Cashback</h3>
+          <p class="text-muted text-sm mt-2">Receba dinheiro de volta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-white border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-3xl font-bold text-center">Como funciona</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          <div class="text-center px-4">
+            <div class="step-num">1</div>
+            <h3 class="font-semibold mt-4">Crie sua conta</h3>
+            <p class="text-muted text-sm mt-2">Cadastro rápido e gratuito, em poucos minutos.</p>
+          </div>
+          <div class="text-center px-4">
+            <div class="step-num">2</div>
+            <h3 class="font-semibold mt-4">Conecte seus cartões</h3>
+            <p class="text-muted text-sm mt-2">Integre suas contas com total segurança.</p>
+          </div>
+          <div class="text-center px-4">
+            <div class="step-num">3</div>
+            <h3 class="font-semibold mt-4">Acompanhe seus resultados</h3>
+            <p class="text-muted text-sm mt-2">Veja para onde vai o seu dinheiro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-16">
+      <div class="bg-primary text-white rounded-2xl px-6 py-12 text-center">
+        <h2 class="text-3xl font-bold">Pronto para transformar suas finanças?</h2>
+        <a href="#" class="btn-primary inline-block mt-6 bg-secondary text-white px-7 py-3 rounded-lg font-semibold">Criar Conta Gratuita</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-muted text-sm">NovaPay © 2026</p>
+      <nav class="flex gap-6 text-sm text-muted">
+        <a href="#" class="nav-link">Sobre</a>
+        <a href="#" class="nav-link">Privacidade</a>
+        <a href="#" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
